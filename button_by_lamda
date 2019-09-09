@@ -12,8 +12,8 @@ bg_green =lambda r:root.configure(background = "green")
 bg_blue =lambda r:root.configure(background = "blue")
 
 b1 = Button(root,text = "click!!!",font = ("Arial",15))
-b1.bind("<Button-1>",bg_red)
-b1.bind("<Button-2>",bg_green)
-b1.bind("<Button-3>",bg_blue)
+b1.bind("<Double-1>",bg_red)   # double click work only
+b1.bind("<Double-2>",bg_green)
+b1.bind("<Double-3>",bg_blue)
 b1.pack()
 root.mainloop()  # 1-- basic window open
