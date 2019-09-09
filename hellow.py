@@ -3,9 +3,9 @@ root = Tk() # 1-- basic window open
 # root.minsize(300,300) # minimum size of the window
 root.geometry("400x400") # adjustable window
 root.resizable(0,0) # window size is fixed now
-un = Label(root,text = "SoftWare") # print label of the window
-un.pack() # label is not printed without pack
-un2 = Label(root, text = "Softwear\nsize\nchange", font = ("Arial",15),bg="yellow",fg="white",height = "3",width = "15")
-un2.pack()
+
+un = Entry(root,font=("Arial",20),fg = "blue")
+un.pack()
+
+
 root.mainloop()  # 1-- basic window open
-# print("jaan")
