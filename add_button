@@ -1,0 +1,10 @@
+from tkinter import *  # 1-- basic window open
+root = Tk() # 1-- basic window open
+root.geometry("400x400") # adjustable window
+root.resizable(0,0) # window size is fixed now
+def show():
+    print("Click button is press")
+
+b1 = Button(root,text = "click!!!",font = ("Arial",15),command= show)
+b1.pack()
+root.mainloop()  # 1-- basic window open
