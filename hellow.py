@@ -4,8 +4,9 @@ root = Tk() # 1-- basic window open
 root.geometry("400x400") # adjustable window
 root.resizable(0,0) # window size is fixed now
 
-b1 =Button(root,text = "Click !!!",font = ("Arial",20),fg = "green") 
-b1.pack()
+l1 = Label(root,text = "Enter Name",font = ("Arial",20))
+l1.pack()
 
-
+e1 = Entry(root, font = ("Arial",20))
+e1.pack()
 root.mainloop()  # 1-- basic window open
