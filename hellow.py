@@ -13,7 +13,7 @@ e1.grid(row = 0,column = 1,pady = 25) #pady for give space
 l2 = Label(root,text = "Enter Password",font = ("Arial",20))
 l2.grid(row = 1,column = 0,pady = 25) #pady for give space
 
-e2 = Entry(root, font = ("Arial",15))
+e2 = Entry(root,show = "*", font = ("Arial",15)) # pasword ko hide kia
 e2.grid(row = 1,column = 1,pady = 25) #pady for give space
 
 b1 = Button(root,text = "Login",font=("Arial",15))
