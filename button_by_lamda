@@ -5,15 +5,15 @@ root.resizable(0,0) # window size is fixed now
 #def show():
     # print("Click button is press")
 
-bg_red =lambda r:root.configure(background = "red") 
+bg_white =lambda r:root.configure(background = "white") 
 
 bg_green =lambda r:root.configure(background = "green")
 
-bg_blue =lambda r:root.configure(background = "blue")
+#bg_blue =lambda r:root.configure(background = "blue")
 
 b1 = Button(root,text = "click!!!",font = ("Arial",15))
-b1.bind("<Double-1>",bg_red)   # double click work only
-b1.bind("<Double-2>",bg_green)
-b1.bind("<Double-3>",bg_blue)
+#b1.bind("<Double-1>",bg_red)   # double click work
+b1.bind("<Enter>",bg_green)     # enter in the area change the color
+b1.bind("<Leave>",bg_white)
 b1.pack()
 root.mainloop()  # 1-- basic window open
