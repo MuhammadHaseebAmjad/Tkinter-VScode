@@ -4,8 +4,20 @@ root.geometry("400x400") # adjustable window
 root.resizable(0,0) # window size is fixed now
 #def show():
     # print("Click button is press")
-def bg_color():
+def bg_red():
     root.configure(background = "red")
-b1 = Button(root,text = "click!!!",font = ("Arial",15),command= bg_color)
-b1.pack()
+def bg_green():
+    root.configure(background = "Green")
+def bg_blue():
+    root.configure(background = "blue")
+
+b1 = Button(root,text = "Red",font = ("Arial",15),command= bg_red)
+b1.grid(row = 0,column = 0, pady = 25)
+
+b2 = Button(root,text = "Green",font = ("Arial",15),command = bg_green)
+b2.grid(row = 0,column = 2,pady = 25)
+
+b3 = Button(root,text = "Blue",font = ("Arial",15),command = bg_blue)
+b3.grid(row = 0,column = 4,pady = 25)
+
 root.mainloop()  # 1-- basic window open
