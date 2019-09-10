@@ -1,0 +1,37 @@
+from tkinter import *  # 1-- basic window open
+root = Tk() # 1-- basic window open
+# root.minsize(300,300) # minimum size of the window
+root.geometry("400x400") # adjustable window
+root.resizable(0,0) # window size is fixed now
+
+def show():
+    a = int(x.get())
+    b = int(y.get())
+    c = str(a+b)
+    z.set(c)
+    
+    x.set("")
+    y.set("")
+
+x = StringVar()
+y = StringVar()
+z = StringVar()
+
+e1 = Entry(root,font = ("Aerial",15),textvariable = x)
+e1.pack(pady = 25)
+
+e2 = Entry(root,font = ("Aerial",15),textvariable = y)
+e2.pack(pady = 25)
+
+b1 = Button(root, text = "Click!!!", font = ("Aerial",15),command = show)
+b1.pack()
+
+e3 = Entry(root,font = ("Aerial",15),textvariable = z)
+e3.pack(pady = 25)
+
+
+
+
+
+
+root.mainloop()  # 1-- basic window open
