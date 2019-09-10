@@ -5,15 +5,25 @@ root.geometry("400x400") # adjustable window
 root.resizable(0,0) # window size is fixed now
 
 def show():
-    s = e1.get()
+    s = x.get()
     print(s)
-e1 = Entry(root,font = ("Aerial",15))
+    x.set("")
+
+#e1 = Entry(root,font = ("Aerial",15))
+#e1.pack(pady = 25)
+
+#b1 = Button(root, text = "Click!!!", font = ("Aerial",15),command = show)
+#b1.pack()
+
+# Same Work done from object class
+
+x = StringVar()
+
+e1 = Entry(root,font = ("Aerial",15),textvariable = x)
 e1.pack(pady = 25)
 
 b1 = Button(root, text = "Click!!!", font = ("Aerial",15),command = show)
 b1.pack()
-
-
 
 
 
